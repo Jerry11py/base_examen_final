@@ -1,0 +1,101 @@
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajustar el ancho */
+    max-width: 400px; /* Limitar el tamaño máximo */
+    text-align: center;
+    margin: 20px auto; /* Centrar automáticamente */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 90%; /* Ajusta al 90% del contenedor */
+    max-width: 400px; /* Limita el tamaño máximo */
+    padding: 10px;
+    margin: 0 auto 15px auto; /* Centra márgenes automáticamente */
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Asegura comportamiento uniforme */
+}
+
+
+
+button {
+    background-color: blue; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: purple; 
+}
+
+#messageStatus {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para la tabla */
+.table-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Encabezados animados */
+th {
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+
+

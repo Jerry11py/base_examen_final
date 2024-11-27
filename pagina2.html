@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="pagina2.css">
+</head>
+<body>
+    <h1>Página Principal</h1>
+    <p>Bienvenido a la página principal, interactúa con las herramientas a continuación:</p>
+
+    <!-- Sección para el envío de correos -->
+    <div class="section">
+        <h2>Enviar un Correo</h2>
+        <form id="emailForm">
+            <label for="toEmail">Para:</label>
+            <input type="email" id="toEmail" placeholder="Ingrese el correo del destinatario" required>
+            
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" placeholder="Ingrese el asunto" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" rows="4" placeholder="Escriba su mensaje" required></textarea>
+            
+            <button type="submit">Enviar Correo</button>
+        </form>
+        <p id="emailStatus"></p>
+    </div>
+
+    <!-- Sección para buscar imágenes de gatos -->
+    <div class="section">
+        <h2>Galería de Gatos</h2>
+        <button id="load-cat">Cargar Gato</button>
+        <div id="cat-container"></div>
+    </div>
+
+    <!-- Sección para mostrar las vacaciones -->
+    <div class="section">
+        <h2>Información sobre Vacaciones</h2>
+        <p id="holidayInfo">Selecciona una fecha para obtener información sobre las vacaciones...</p>
+        <button id="getHoliday">Seleccionar Fecha</button>
+        <input type="date" id="datePicker" style="display:none;" />
+    </div>
+
+    <!-- Botón para ir a (formulario.html) -->
+    <div class="section">
+        <h2>Ir al Formulario</h2>
+        <button onclick="window.location.href='formulario.html'">Ir al Formulario</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="scripts2.js"></script>
+</body>
+</html>

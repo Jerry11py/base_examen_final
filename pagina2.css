@@ -1,0 +1,80 @@
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+/* Secciones */
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajustar el ancho */
+    max-width: 400px; /* Limitar el tamaño máximo */
+    margin: 20px auto; /* Centrar automáticamente */
+}
+
+
+/* Formularios */
+input, textarea {
+    width: 90%; /* Ajusta al 90% del contenedor */
+    max-width: 400px; /* Limita el tamaño máximo */
+    padding: 10px;
+    margin: 0 auto 15px auto; /* Centra márgenes automáticamente */
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box; /* Asegura comportamiento uniforme */
+}
+
+
+/* Botones */
+button {
+    background-color: blue; /* Azul por defecto */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto; /* Centrar márgenes */
+    display: block; /* Para que ocupe su propio espacio */
+}
+
+button:hover {
+    background-color: purple; /* Púrpura en hover */
+}
+
+
+/* Resultados de imágenes */
+#imageResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imageResults img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Frases populares */
+#randomQuote {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+}

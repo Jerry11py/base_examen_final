@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Tabla</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Envío</h1>
+        <form id="employeeForm">
+            <label for="toEmail">Correo del Destinatario:</label>
+            <input type="email" id="toEmail" placeholder="Ingrese el correo del destinatario" required>
+
+            <label for="employeeData">Datos de Empleado:</label>
+            <input type="text" id="employeeData" placeholder="Ingrese datos del empleado" required>
+
+            <label for="salary">Sueldo:</label>
+            <input type="number" id="salary" placeholder="Ingrese el sueldo" required>
+
+            <label for="observation">Observación:</label>
+            <textarea id="observation" rows="4" placeholder="Escriba su observación" required></textarea>
+
+            <label for="senderName">Nombre del remitente:</label>
+            <input type="text" id="senderName" placeholder="Ingrese su nombre" required>
+
+            <button type="submit">Enviar Mensaje</button>
+            <button type="button" id="clearForm">Limpiar Formulario</button>
+        </form>
+        <p id="messageStatus"></p>
+    </div>
+
+    <div class="table-container">
+        <h2>Tabla de Operaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>OPERACIÓN</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CALCULO SALARIO</td>
+                    <td>Ingresar el salario y el descuento para calcular el total</td>
+                    <td>
+                        <button onclick="calcularSalario()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total de puntos</td>
+                    <td>Ingresar 3 puntajes y calcular el total</td>
+                    <td>
+                        <button onclick="calcularPuntos()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PORCENTAJE DE PUNTO</td>
+                    <td>Ingresar un puntaje y calcular el 15% del puntaje</td>
+                    <td>
+                        <button onclick="calcularPorcentaje()">Calcular</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button">
+        <button onclick="window.location.href='pagina2.html'">Volver a Página Principal</button>
+    </div>
+    
+
+    <script src="formulario.js"></script>
+</body>
+</html>
